@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>PassSafe | Your personal password manager</title>
+  </head>
+  <body>
+    <section id="register-password" class="transparent-section">
+      <h1>Add New Password</h1>
+      <div id="register-password-form">
+        <div class="form-group">
+          <label for="site-name">Website name:</label>
+          <input
+            type="text"
+            id="site-name"
+            class="transparent-input"
+            placeholder="Enter the website name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="username-email">Username / Email:</label>
+          <input
+            type="text"
+            id="username-email"
+            class="transparent-input"
+            placeholder="Enter the username or email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="transparent-input"
+            placeholder="Enter the password"
+          />
+        </div>
+        <div id="register-password-btn-container">
+          <button class="btn-submit" id="register-password-submit">
+            <img src="./img/lock.png" alt="" />
+            <span>Save Passwrod</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="view-passwords" class="transparent-section">
+      <h1>Your passwords</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Website</th>
+            <th>Username/Email</th>
+            <th>password</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>
